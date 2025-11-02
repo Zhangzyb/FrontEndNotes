@@ -3,19 +3,29 @@ import { defineConfig } from 'rspress/config';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
-  title: 'My Site',
-  icon: '/rspress-icon.png',
-  logo: {
-    light: '/rspress-light-logo.png',
-    dark: '/rspress-dark-logo.png',
-  },
+  title: 'Z的记录',
+  lang: 'zh-CN',
   themeConfig: {
-    socialLinks: [
-      {
-        icon: 'github',
-        mode: 'link',
-        content: 'https://github.com/web-infra-dev/rspress',
-      },
-    ],
+    sidebar: {
+      '/': [
+        {
+          text: '前端基础',
+          items: [
+            {
+              text: 'HTML',
+              link: 'html'
+            },
+            {
+              text: 'CSS',
+              link: 'css'
+            },
+            {
+              text: 'JavaScript',
+              link: 'javascript'
+            }
+          ]
+        }
+      ]
+    }
   },
 });
