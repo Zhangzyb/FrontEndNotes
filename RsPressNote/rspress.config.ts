@@ -24,6 +24,14 @@ export default defineConfig({
               link: 'javascript'
             }
           ]
+        },
+        {
+          text: '计算机基础',
+          items: []
+        },
+        {
+          text:'浏览器相关',
+          items: []
         }
       ]
     }
